@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To_Do_List_App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="sttyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <div class="container">
+<div id="wrapper" class="container-fluid">
+  <div id="book-list" class="row center-align">
+        <h2 class="title"><strong>To Do List</strong></h2><hr/>
+    </div>
+    <div class="row">
+            <div class=" col s12 l12 center-align">
+                <span><a href="#modal1"  class="btn-floating btn-large waves-effect waves-ripple tooltipped modal-trigger" data-position="top" data-tooltip="Add To-Do"><i class="black material-icons">add_circle_outline</i></a></span>
+            </div>
+        </div>
+</div>
+</div>
+  <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Add A ToDo </h4>
+          <form class="col s6">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="input_text" type="text" data-length="50">
+                    <label for="input_text">Type Your ToDo</label>
+                  </div>
+                </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-gray btn-flat" id="add-item" onclick="add_element()">Add Item</a>
+        </div>
+    
+    </div>
+    <div class="row"  id="list-items">
+      <ul id= "unordered-list">
+                <div class="row first-row">
+                        <li class="wop">
+                            <span class="col xl10 l9 m8 s6 name">
+                                    Morning Walk
+                            </span>
+                        </li>
+                    </div>             
+                <div class="row first-row">
+                        <li>
+                            <span class="col xl10 l9 m8 s6 name">
+                                    Go To University
+                            </span>
+                        </li>
+                    </div>
+      </ul>
+    </div>
+   <div class="modal" id="modal-edit">
+        <div class="modal-content">
+          <h4>Edit</h4>
+          <form class="col s6">
+                <div class="row">
+                  <div class="input-field col s12 update-input">
+                    <input id="" class="wtf" type="text" data-length="50">
+                    <label for="input_text" id=""></label>
+                  </div>
+                </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-blue btn-flat" id="update-item"  >Update</a>
+        </div>
+    </div>
+  </div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <footer class="page-footer black darken-4 center-align fop">
+      <div class="container">
+        <div class="row">
+          <div class="col l12">
+            <p>Proudly created with Softious Systems |  Terms of Use  |   Privacy Policy </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+$('.tooltipped').tooltip()
+$('.modal').modal()
+$('input#input_text').characterCounter();
+});
+</script>
+<script>
+ 
+</script>
+<script>
+</script>
+</body>
+</html>
